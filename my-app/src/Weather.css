@@ -79,3 +79,8 @@ body {
   .weather-forecast-temperature-min{
   opacity: 0.5
   }
+  @media (max-width:600px){
+    .container .btn{
+margin-left: -15px;
+    }
+  }
