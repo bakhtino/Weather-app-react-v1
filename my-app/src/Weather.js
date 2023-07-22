@@ -10,7 +10,7 @@ export default function Weather() {
         <form  className="mb-3">
           <div className="row">
             <div className="col-9">
-              <input type="search" placeholder="Type city name.." className="form-control" autocomplete="off"/>
+              <input type="search" placeholder="Type city name.." className="form-control" autocomplete="off" autofocus="on" />
             </div>
             <div className="col-3">
               <input type="submit" value="Search" className="btn btn-primary w-300"/>
@@ -25,7 +25,7 @@ export default function Weather() {
         <div className="row">
           <div className="col-6">
             <div className="clearfix weather-temperature">
-              <img src=" http://openweathermap.org/img/wn/02n@2x.png" alt="few clouds" className="float-left" />
+              <img src=" http://openweathermap.org/img/wn/02n@2x.png" alt="few clouds"  />
 
               <strong >34</strong>
               <span className="units">℃ </span>
