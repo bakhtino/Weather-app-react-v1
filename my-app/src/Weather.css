@@ -32,6 +32,7 @@ body {
   footer {
     font-size: 12px;
     text-align: center;
+    margin: 10px;
   }
   .weather-temperature img {
     margin-right: 10px;
