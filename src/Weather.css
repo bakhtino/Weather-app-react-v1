@@ -19,12 +19,12 @@ body {
     list-style: none;
     color: #70757a;
     font-size: 12px;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
   }
   li {
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px;
   }
   li:firstletter {
     text-transform: uppercase;
@@ -34,11 +34,14 @@ body {
     text-align: center;
     margin: 10px;
   }
+  a {
+    
+  }
   .weather-temperature canvas {
     margin-right: 10px;
     display: inline-block;
     height: 50px;
-    margin-top: 0px;
+    margin-top: -15px;
     vertical-align: top;
     width: 50px;
     padding: 0;
@@ -48,14 +51,15 @@ body {
     font-weight: 400;
     color: #202124;
     line-height: 0.1;
-    margin-left: 60px;
-    padding: 0;
+    margin-left: 50px;
+    padding: 20px 0 20px 20px;
   }
   .weather-temperature .units {
     font-size: 16px;
     line-height: 24px;
     position: relative;
     top: -20px;
+    
   }
   .description:first-letter {
     text-transform: uppercase;
