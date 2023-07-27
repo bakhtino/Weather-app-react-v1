@@ -7,7 +7,7 @@ import axios from "axios";
 export default function Weather(props) {
 
   const[weatherData, setWeatherData]= useState({ready: false});
-  const[city, setCity]= useState(props.defaultCity);
+  const [city, setCity] = useState(props.defaultCity);
   function handleData(response) {
     console.log(response.data);
    setWeatherData({
@@ -21,17 +21,18 @@ export default function Weather(props) {
     date: new Date(response.data.dt*1000),
    })  
   }
+  
+  function handleSubmit(event){
+    event.preventDefault();
+    alert(city);
+  }
+  function displayCity(event){
+    setCity(event.target.value);
+  }
   function search(){
     const apiKey = "be3787b39239779c9856215f2383d86b";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleData);
-  }
-  function handleSubmit(event){
-    event.preventDefault();
-    search();
-  }
-  function displayCity(event){
-    setCity(event.target.value);
   }
 
   if (weatherData.ready) {
