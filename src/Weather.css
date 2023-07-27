@@ -34,19 +34,22 @@ body {
     text-align: center;
     margin: 10px;
   }
-  .weather-temperature img {
+  .weather-temperature canvas {
     margin-right: 10px;
     display: inline-block;
-    height: 90px;
-    margin-top: -20px;
+    height: 50px;
+    margin-top: 0px;
     vertical-align: top;
-    width: 100px;
+    width: 50px;
+    padding: 0;
   }
   .weather-temperature strong {
     font-size: 40px;
     font-weight: 400;
     color: #202124;
-    line-height: 1;
+    line-height: 0.1;
+    margin-left: 60px;
+    padding: 0;
   }
   .weather-temperature .units {
     font-size: 16px;
