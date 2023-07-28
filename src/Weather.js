@@ -55,6 +55,12 @@ export default function Weather(props) {
       <WeatherInfo data={weatherData} />
       <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
+      <footer>
+        <a href="https://github.com/bakhtino/Vanilla-Weather_app" target="_blank" rel="noreferrer">Open source code</a>
+        by
+        <a href="https://www.linkedin.com/in/noushin-bakhtiari-b6314297/?originalSubdomain=ir" target="_blank" rel="noreferrer">Noushin Bakhtiari</a>
+        in 28 JUL 2023 
+      </footer>
       </div>    
 </div>
   );

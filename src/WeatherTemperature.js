@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import "./WeatherTemperature.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function WeatherTemperature(props){
@@ -14,8 +15,8 @@ export default function WeatherTemperature(props){
 
     if (unit=== "celsiuc"){
         return(
-            <div>
-    <strong >{Math.round(props.celsiuc)}</strong>
+            <div className="temperature">
+    <strong  >{Math.round(props.celsiuc)}</strong>
           <span className="units"> ℃  | <a href="/" onClick={showFahrenhiet} className="text-decoration-none" >˚F</a>  </span>
           
             </div>
@@ -23,8 +24,8 @@ export default function WeatherTemperature(props){
     } else{
         let fahrenhiet = (props.celsiuc*9/5)+32;
         return(
-            <div>
-    <strong >{Math.round(fahrenhiet)}</strong>
+            <div className="temperature">
+    <strong  >{Math.round(fahrenhiet)}</strong>
           <span className="units">
              <a href="/" onClick={showCelsiuc} className="text-decoration-none" >
                 ℃</a>
