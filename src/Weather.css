@@ -32,9 +32,7 @@ body {
     margin: 10px;
   }
   
-  .temperatureCanvas { 
-    margin-top: -15px;    
-  }
+ 
   
   .description:first-letter {
     text-transform: uppercase;
